@@ -1,10 +1,9 @@
 "use client";
 import React,{useState,useEffect} from "react";
-import Header from "../components/ui/Header";
-export default function Home() {
+export default function Loginpage() {
   return (
     <div>
-      <Header />
+       hi
     </div>
   );
 }
