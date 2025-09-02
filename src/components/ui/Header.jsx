@@ -15,7 +15,7 @@ export default function Header() {
             <Link href="/seller-dashboard"><Button className={"hover:text-white text-green-500 hover:bg-green-500 bg-white font-semibold"}>seller dashboard</Button></Link>
             <Link href="/"><Button className={"hover:text-white text-green-500 hover:bg-green-500 bg-white font-semibold"}>Home</Button></Link>
             <Link href="/all-products"><Button className={"hover:text-white text-green-500 hover:bg-green-500 bg-white font-semibold"}>All Products</Button></Link>
-            <span className="relative"><input className="focus:outline-none px-3 border border-green-400 p-1 rounded focus:ring-2 focus:ring-green-500" /><CiSearch className="absolute right-2 top-1/2 transform -translate-y-1/2 text-green-500" /></span>
+            <span className="relative"><input placeholder="search products..." className="focus:outline-none px-3 border border-green-400 p-1 rounded focus:ring-2 focus:ring-green-500" /><CiSearch className="absolute right-2 top-1/2 transform -translate-y-1/2 text-green-500" /></span>
             <Link href="/login"><Button className={"hover:text-white text-green-500 hover:bg-green-500 bg-white font-semibold"}>Login</Button></Link>
             <Link href="/cart"><Button className={"hover:text-white text-green-500 hover:bg-green-500 bg-white font-semibold"}><MdOutlineShoppingCartCheckout size={20}/></Button></Link>
         </div>
