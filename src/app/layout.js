@@ -4,9 +4,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <title>eGrocery</title>
-        <link rel="icon" href="/images/logo.png" />
+        <link rel="icon" href="/images/favicon.avif" />
       </head>
-      <body>
+      <body className="min-h-screen w-full">
         {children}
       </body>
     </html>
