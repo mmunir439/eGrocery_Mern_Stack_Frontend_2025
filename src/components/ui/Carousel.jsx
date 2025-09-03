@@ -1,18 +1,6 @@
-// "use client";
-// import React,{useState,useEffect} from "react";
-// export default function Carousel() {
-//   return (
-//     <div className="mt-8 flex justify-center items-center flex-col">
-//        <div className="bg-green-100 h-[400px] w-[80%] flex md:flex-row flex-col items-center mt-[20px]">
-//         <img src="/images/banner.png" alt="Carousel Image" className="object-cover w-full h-full" />
-//         <h1 className="text-2xl font-semibold">Welcome to eGrocery</h1>
-//        </div>
-//     </div>
-//   );
-// }
-
 "use client";
 import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 import React from "react";
 import { Button } from "./button";
 export default function Carousel() {
@@ -31,8 +19,8 @@ export default function Carousel() {
             <Button className=" text-white bg-green-600 ">
                 <Link className="" href="/all-products">Shop Now</Link>
             </Button>
-            <Button className={"text-white bg-green-600"}>
-                <Link className="" href="/deals">Explore deals</Link>
+            <Button className={"text-white flex bg-green-600"}>
+                <Link className="" href="/deals">Explore deals </Link><FaArrowRight />
             </Button>
           </div>
         </div>

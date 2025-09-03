@@ -1,14 +1,14 @@
 "use client";
 import React, { useState } from "react";
-import Link from "next/link";
 import { Button } from "./button";
 import { MdOutlineShoppingCartCheckout } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 import { HiMenu, HiX } from "react-icons/hi"; // Hamburger and close icons
-
+import { Input } from "@/components/ui/input";
+import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
     <div className="flex flex-wrap items-center justify-between md:justify-around border-b py-5 px-4">
       {/* Logo */}
@@ -32,9 +32,8 @@ export default function Header() {
 
       {/* Navigation Links */}
       <div
-        className={`${
-          isMenuOpen ? "block" : "hidden"
-        } md:flex flex-col md:flex-row items-center gap-4 w-full md:w-auto mt-4 md:mt-0`}
+        className={`${isMenuOpen ? "block" : "hidden"
+          } md:flex flex-col md:flex-row items-center gap-4 w-full md:w-auto mt-4 md:mt-0`}
       >
         <Link href="/seller-dashboard">
           <Button className="hover:text-white text-green-500 hover:bg-green-500 bg-white font-semibold">
@@ -64,21 +63,18 @@ export default function Header() {
 
       {/* Login and Cart */}
       <div
-        className={`${
-          isMenuOpen ? "block" : "hidden"
-        } md:flex flex-col md:flex-row items-center gap-4 mt-4 md:mt-0`}
+        className={`${isMenuOpen ? "block" : "hidden"
+          } md:flex flex-col md:flex-row items-center gap-4 mt-4 md:mt-0`}
       >
-        <Link href="/login">
-          <Button className="hover:text-white text-green-500 hover:bg-green-500 bg-white font-semibold">
-            Login
-          </Button>
-        </Link>
+        <Button className="hover:text-white text-green-500 hover:bg-green-500 bg-white font-semibold">
+         <Link href="/login">Login</Link>
+        </Button>
         <Link href="/cart">
           <Button className="hover:text-white text-green-500 hover:bg-green-500 bg-white font-semibold">
             <MdOutlineShoppingCartCheckout size={20} />
           </Button>
         </Link>
       </div>
-    </div>
-  );
+      
+    </div>);
 }
