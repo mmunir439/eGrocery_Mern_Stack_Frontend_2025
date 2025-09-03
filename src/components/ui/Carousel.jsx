@@ -5,9 +5,9 @@ import React from "react";
 import { Button } from "./button";
 export default function Carousel() {
   return (
-    <div className="mt-8 flex justify-center items-center flex-col">
+    <div className="md:mt-8 flex justify-center mb-[32px] items-center flex-col">
       {/* Carousel Container */}
-      <div className="bg-green-100 h-[400px] w-[80%] flex md:flex-row flex-col items-center justify-between px-8 py-4 rounded-lg shadow-lg">
+      <div className="bg-green-100 h-[500px] md:h-[400px] w-[80%] flex md:flex-row flex-col items-center justify-between px-8 py-4 rounded-lg shadow-lg">
         {/* Text Content */}
         <div className="max-w-md">
           <h1 className="text-4xl font-bold text-gray-800">
@@ -26,11 +26,11 @@ export default function Carousel() {
         </div>
 
         {/* Image */}
-        <div className="w-[400px] h-[300px] flex items-center justify-center">
+        <div className="w-[400px]  flex items-center justify-center">
           <img
-            src="/images/banner.png"
+            src="/images/logo1.jpg"
             alt="Fresh Vegetables"
-            className="md:object-cover md:w-full md:h-full w-[400px]"
+            className="object-cover mb-10  md:w-full md:h-full w-[200px]"
           />
         </div>
       </div>
