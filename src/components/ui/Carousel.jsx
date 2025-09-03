@@ -20,7 +20,7 @@ export default function Carousel() {
                 <Link className="" href="/all-products">Shop Now</Link>
             </Button>
             <Button className={"text-white flex bg-green-600"}>
-                <Link className="" href="/deals">Explore deals </Link><FaArrowRight />
+                <Link href="/all-products">Explore deals </Link><FaArrowRight />
             </Button>
           </div>
         </div>

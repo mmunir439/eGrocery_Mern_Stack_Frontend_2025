@@ -35,7 +35,7 @@ export default function Header() {
         className={`${isMenuOpen ? "block" : "hidden"
           } md:flex flex-col md:flex-row items-center gap-4 w-full md:w-auto mt-4 md:mt-0`}
       >
-        <Link href="/seller-dashboard">
+        <Link href="/login">
           <Button className="hover:text-white text-green-500 hover:bg-green-500 bg-white font-semibold">
             Seller Dashboard
           </Button>
