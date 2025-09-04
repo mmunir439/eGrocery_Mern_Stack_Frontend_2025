@@ -58,7 +58,7 @@ export default function Bakkery() {
     <div>
       <Header />
       <div className="text-3xl font-bold m-3 mt-10 mb-5 text-center">
-               <h1>Bakkery  <span className="text-green-500 underline">Products</span></h1>
+               <h1>All types of <span className="text-green-500 underline">Products</span></h1>
       </div>
        <div className="grid md:grid-cols-5 grid-cols-1 mb-20">
         {allproductsarray.map((item,index)=>(
