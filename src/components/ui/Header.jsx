@@ -69,11 +69,11 @@ export default function Header() {
         <Button className="hover:text-white text-green-500 hover:bg-green-500 bg-white font-semibold">
          <Link href="/login">Login</Link>
         </Button>
-        <Link href="/cart">
           <Button className="hover:text-white text-green-500 hover:bg-green-500 bg-white font-semibold">
-            <MdOutlineShoppingCartCheckout size={20} />
+        <Link href="/cart"><MdOutlineShoppingCartCheckout size={20} /></Link>
+            
           </Button>
-        </Link>
+  
       </div>
       
     </div>);
